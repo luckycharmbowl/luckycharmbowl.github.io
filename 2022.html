@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="iso-8859-1">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LuckyCharmBowl2022</title><!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href=
+  "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  integrity=
+  "sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+  crossorigin="anonymous"><!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style.css"><!-- Font Awesome JS -->
+
+  <script defer src=
+  "https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity=
+  "sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+  crossorigin="anonymous"></script>
+  <script defer src=
+  "https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+  integrity=
+  "sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- graphing JS from D3 -->
+  <script src="https://d3js.org/d3.v4.js"></script> 
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <!-- end graphing D3 -->
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Lucky Charm&#8482; Cereal Bowl</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#welcome">Welcome!</a>
+        </li>
+
+        <li>
+          <a href="#description">Description</a>
+        </li>
+
+        <li>
+          <a href="#rulesSubmenu" data-toggle="collapse" aria-expanded=
+          "false" class="dropdown-toggle">Rules</a>
+          <ul class="collapse list-unstyled" id="rulesSubmenu">
+            <li>
+              <a href="#rule-bowl">Regulation Bowls</a>
+            </li>
+
+            <li>
+              <a href="#rule-yack">No Yacking</a>
+            </li>
+
+            <li>
+              <a href="#rule-counterfeit">No maties</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#disclaimers">Disclaimers</a>
+        </li>
+
+        <li>
+          <a href="#scores">Scores</a>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+        <li>
+          <a href="#sponsors">Sponsors</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" id="sidebarCollapse" class=
+    "btn btn-info"><span class="left"><i class=
+    "fas fa-angle-left">&#160;</i></span> <span class="right"><i class=
+    "fas fa-angle-right">&#160;</i></span></button> 
+    <!-- Page Content  -->
+
+    <div id="content">
+      <div id="welcome">
+        <span><img src="images/logo.png" alt="Lucky Charm Bowl 2022"
+        style="width: 100%;"></span>
+        <div class="image-container">
+          <iframe src="https://www.youtube.com/embed/dxAmQ8UCKOg"
+          width="100%" height="100%" allowfullscreen></iframe>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <h1 id="over">Competition Now Ended</h1>
+	<h2>Winners: Max & Julia</h2>
+      </div>
+
+      <div class="line">
+      </div>
+
+      <section id="description">
+        <h2>Your mission:</h2>
+
+        <p>To gorge yourself on as many lucky charms as you can within
+        a week. The competition will take place from Sunday, October
+        16th to Saturday, October 22.</p>
+
+        <p>If you want to submit your bowls, send them to <a href=
+        "mailto:luckycharmbowl2022@gmail.com">luckycharmbowl2022@gmail.com</a>.
+        If you do not wish your name to be displayed on the website,
+        please request an alias in the email.</p>
+      </section>
+
+      <section id="rules">
+        <h2>Some reasonable rules:</h2>
+
+        <ul class="list-unstyled components">
+          <li id="rule-bowl">
+            <a data-toggle="collapse" href="#rule-bowl-extra" role=
+            "button" aria-expanded="false" aria-controls=
+            "collapseExample">
+            <div class="list-group-item dropdown-toggle">
+              Regulation bowls only.
+            </div>
+
+            <div class="list-group-item collapse" id="rule-bowl-extra">
+              <ul>
+                <li>A regulation &quot;bowl&quot; must contain no less
+                than 24 charms and 226 normal cereal pieces.</li>
+
+                <li>Don&#39;t stress too much about it. If you have a
+                dispensary, it should be about a half-crank&#39;s
+                worth.</li>
+
+                <li>Partial bowls will not be counted.</li>
+
+                <li>Milk is optional.</li>
+              </ul>
+            </div></a>
+          </li>
+
+          <li id="rule-yack">
+            <a data-toggle="collapse" href="#rule-yack-extra" role=
+            "button" aria-expanded="false" aria-controls=
+            "collapseExample">
+            <div class="list-group-item dropdown-toggle">
+              Don&#39;t try to yack, or we&#39;ll give you flak!
+            </div>
+
+            <div class="list-group-item collapse" id="rule-yack-extra">
+              <ul>
+                <li>If you eat Lucky Charms&#8482; to the point of
+                yarfing, spewing, or heaving, the cereal which came up
+                is still counted, but further bowls on the same day
+                will be considered INVALID and VOID.</li>
+
+                <li>If you honk a second time (gods forbid), your score
+                will stand, but be frozen for the remainder of the
+                competition. NO NEW BOWLS!</li>
+
+                <li>To discourage overconsumption, on day 1 of the
+                competition, you are limited to 6 bowls. (Any further
+                bowls will NOT be counted)</li>
+              </ul>
+            </div></a>
+          </li>
+
+          <li id="rule-counterfeit">
+            <a data-toggle="collapse" href="#rule-counterfeit-extra"
+            role="button" aria-expanded="false" aria-controls=
+            "collapseExample">
+            <div class="list-group-item dropdown-toggle">
+              No Marshmallow Maties!
+            </div>
+
+            <div>
+              <div class="list-group-item collapse" id=
+              "rule-counterfeit-extra">
+                <ul>
+                  <li>No counterfeit cereals. Lucky Charms&#8482;
+                  only.</li>
+
+                  <li>Cereal only (no rice crispies, etc.)</li>
+                </ul>
+              </div>
+            </div></a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="disclaimers">
+        <h2>For health reasons, this challenge is discouraged.</h2>
+
+        <p>(Don&#39;t be nasty, we&#39;re just doing this for fun)</p>
+      </section>
+
+      <section id="scores">
+        <h2>Current scores</h2>
+
+        <div id="scores_graph">
+        </div>
+
+        <p>Last updated on Saturday, October 22th</p>
+      </section>
+
+      <section id="sponsors">
+        <h2>Sponsors</h2>
+        <img src="images/tmz_sponsorship_logo.jpg" alt=
+        "aaaaaaaaaaaaaaa"> <img src=
+        "images/nesting_sponsorship_logo.jpg" alt=
+        "nesting_sponsorship_logo.jpg"> <img src=
+        "images/macrohard_sponsorship_logo.jpg" alt=
+        "macrohard_sponsorship_logo.jpg"> <img src=
+        "images/hell_make_in_firealpaca.jpg" alt=
+        "hell_make_in_firealpaca.jpg"> <img src=
+        "images/GayGal_sponsorship_logo.jpg" alt=
+        "GayGal_sponsorship_logo.jpg"> <img src=
+        "images/bike_sponsor_logo.jpg" alt="bike_sponsor_logo.jpg">
+        <img src="images/CIARA_MISSED_SPONSOR_LOGO.jpg" alt=
+        "CIARA_MISSED_SPONSOR_LOGO.jpg"> <img src=
+        "images/flexxon_em_logo_do_in_firealpaca.jpg" alt=
+        "flexxon_em_logo_do_in_firealpaca.jpg"> <img src=
+        "images/will_you_feel_guilty_when_your_parents_die_sponsorship_logo.jpg"
+        alt=
+        "will_you_feel_guilty_when_your_parents_die_sponsorship_logo.jpg">
+         <img src="images/ga-doink_productions.png" alt=
+        "ga-doink_productions.png">
+      </section>
+    </div>
+  </div>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity=
+  "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script> <!-- Popper.JS -->
+   
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+   <!-- Bootstrap JS -->
+   
+  <script src=
+  "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+  integrity=
+  "sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+  crossorigin="anonymous"></script> <!-- end Bootstrap JS -->
+
+  <!-- confetti -->
+  <script src="confetti.min.js"></script>
+  <!-- end confetti -->
+   
+  <script src="script.js"></script> 
+  <script src="graph_script.js"></script>
+</body>
+</html>
