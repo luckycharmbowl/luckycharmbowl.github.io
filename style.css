@@ -39,6 +39,10 @@ a:focus {
     transition: all 0.3s;
 }
 
+a.explicit-link {
+    text-decoration: underline;
+}
+
 /* .navbar { */
 /*     padding: 15px 10px; */
 /*     background: var(--white); */
