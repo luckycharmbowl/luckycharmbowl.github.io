@@ -84,6 +84,8 @@ a.explicit-link {
     color: var(--yellow);
     transition: all 0.3s;
     z-index: 2;
+    height: 100vh;
+    position: absolute;
 }
 
 #sidebar.active {
@@ -169,6 +171,9 @@ a.article:hover {
     background-color: var(--green);
     height: 60px;
     z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 100%;
 }
 
 #sidebarCollapse .right {
@@ -194,6 +199,16 @@ a.article:hover {
     height: 100vh;
     overflow-y: auto;
     transition: all 0.3s;
+}
+
+#sidebar + #content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
+#sidebar.active + #content {
+    width: 100%;
+    margin-left: 0;
 }
 
 
@@ -273,14 +288,24 @@ a.article:hover {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
+    #content {
+        padding: 0;
+    }
+
+    #sidebar + #content {
+        width: 100%;
+        margin-left: 0;
+    }
+
     #sidebar {
         margin-left: -250px;
     }
     #sidebar.active {
         margin-left: 0;
     }
-    #content {
-	padding: 0 80px;
+
+    #sidebarCollapse {
+        position: absolute;
     }
 
     #sidebarCollapse .right {
@@ -290,13 +315,9 @@ a.article:hover {
         display: none;
     }
 
-    #content {
-	padding: 0 80px;
-    }
-
     #welcome span {
-        left: -140px;
-        width: calc(100% + 220px);
+        left: 0;
+        width: 100%;
     }
 
     #sidebarCollapse.open .right {
@@ -309,10 +330,6 @@ a.article:hover {
 }
 
 @media (max-width: 400px) {
-    #content {
-        padding: 0;
-    }
-
     #welcome span {
 	left: -25px;
         width: calc(100% + 25px);

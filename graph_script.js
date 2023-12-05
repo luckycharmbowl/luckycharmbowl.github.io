@@ -37,7 +37,7 @@ var svg = d3.select("#scores_graph")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("https://luckycharmbowl2022.github.io/scores.csv",
+d3.csv("https://luckycharmbowl.github.io/scores.csv",
 
 function(data) {
     console.log("reading the csv!", data);
